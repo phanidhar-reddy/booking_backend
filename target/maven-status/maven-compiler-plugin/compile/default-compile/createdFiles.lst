@@ -1,0 +1,5 @@
+com/spreddy/booking/controller/AnnouncementController.class
+com/spreddy/booking/configs/AppProperties.class
+com/spreddy/booking/model/announcments/Announcement.class
+com/spreddy/booking/common/constants/PathConstants.class
+com/spreddy/booking/BookingApplication.class
