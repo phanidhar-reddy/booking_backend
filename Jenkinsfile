@@ -6,9 +6,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Building.."
+                echo "Building booking application "
                 sh '''
-                echo "doing build stuff.."
                 java --version
                 mvn clean install -DskipTest=true
                 '''
@@ -16,16 +15,15 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo "Testing.."
+                echo "Testing UT's booking application"
                 sh '''
-                echo "doing test stuff.."
                 mvn test
                 '''
             }
         }
         stage('Deliver') {
             steps {
-                echo 'Deliver....'
+                echo 'Deliver booking application'
                 sh '''
                 echo "doing delivery stuff.."
                 '''
